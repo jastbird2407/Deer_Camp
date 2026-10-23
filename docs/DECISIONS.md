@@ -4,6 +4,11 @@ _Maintained by the project-manager agent. Newest first._
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-10-23 | D-13: Two levels. A **group** (the big camp, any size) holds many **hunts** (individual trips), each with its own **party** members | Jason's direction: the big group sees all hunts; each trip has its own party |
+| 2026-10-23 | D-14: A hunt not shared to the group shows the whole group a **summary** only; full details stay with the party | Jason's choice |
+| 2026-10-23 | D-15: **Any party member** can share a hunt to the big group | Jason's choice |
+| 2026-10-23 | D-16: Hunting spot **pins belong to the group** and any hunt can use them | Jason's choice: one shared map |
+| 2026-10-23 | D-17: New feature: **photo import** to build past hunts. Upload past photos; read date and location from photo metadata; group them into prior trips | Jason's request. Detail and timing to be planned by PM |
 | 2026-10-23 | D-5: Maps use MapLibre GL JS with USGS satellite and topo tiles, saved offline for the camp area only | Free, public domain, allowed to cache; Mapbox offline terms unclear for web |
 | 2026-10-23 | D-6: Weather uses Open-Meteo | Free, no key, wind and moon data; switch if Deer Camp is ever sold |
 | 2026-10-23 | D-7: Roster allows name-only guests without an app account | Keeps the yearbook complete; already in the schema |
