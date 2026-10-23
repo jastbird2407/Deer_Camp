@@ -46,7 +46,7 @@ Placeholders: `{Camp}` = camp name, `{Inviter}` = display name of the person who
 **Copy:**
 - Welcome h1: "Deer Camp". Body: "Your crew's private hunting yearbook." Button: "Sign in".
 - Email h1: "What's your email?" Help: "We'll send you a code. No password needed." Button: "Send code".
-- Name h1: "What does the crew call you?" Help: "This is how you'll show up on the roster." Button: "Done".
+- Name h1: "What does the crew call you?" Help: "This is how you'll show up in your camp." Button: "Done".
 - No-camp screen h1: "You're not in a camp yet". Body: "Ask your camp's owner to text you an invite link. Or start your own camp." Buttons: "Start a camp" (secondary). There's no primary on this screen, because waiting for a link is the normal path.
 
 **States:**
@@ -77,7 +77,7 @@ Placeholders: `{Camp}` = camp name, `{Inviter}` = display name of the person who
 - **Loading:** the button spins.
 - **Offline:** "Create camp" shows "Needs signal". Help line: "Creating a camp needs signal, so everyone can join it."
 - **Error:** "Couldn't create the camp. Try again." The name is kept.
-- **Empty:** the camp home shows only the owner on the roster, plus the invite card.
+- **Empty:** the camp home shows the invite card and the "No hunts yet" card (`hunts.md`); Crew lists only the owner.
 
 **Default:** any signed-in user can create a camp, to support multiple crews later. Flagged for Jason, who may want to limit this to himself for now.
 
@@ -99,7 +99,7 @@ Placeholders: `{Camp}` = camp name, `{Inviter}` = display name of the person who
 
 **Prefilled message text:** "{Inviter} invited you to {Camp} on Deer Camp, our private hunting yearbook. Tap to join (works until {date}): {link}"
 
-**Crew list, "Waiting to join" rows:** "{name}" · caption "Member · expires {date}" (in `warning` tone when less than 24 hours remain) · trailing menu: "Share again", "Cancel invite". Expired invites show as "Expired {date}" with "Send a new link". Used invites disappear and the person shows in the roster.
+**Crew list, "Waiting to join" rows:** "{name}" · caption "Member · expires {date}" (in `warning` tone when less than 24 hours remain) · trailing menu: "Share again", "Cancel invite". Expired invites show as "Expired {date}" with "Send a new link". Used invites disappear and the person shows in the Crew list.
 
 **Revoke:** "Cancel invite" → confirm sheet "Cancel {name}'s invite? The link will stop working." → "Cancel invite" (danger) / "Keep it". Toast: "Invite canceled."
 
@@ -208,7 +208,7 @@ Placeholders: `{Camp}` = camp name, `{Inviter}` = display name of the person who
 
 **Builder notes:**
 - Turn off Supabase "time-box user sessions" and "inactivity timeout". Never call `signOut` on a network error.
-- Cache the camp data needed for the camp home and roster after every successful online load.
+- Cache the camp data needed for the camp home (hunt cards and summaries) and Crew list after every successful online load; readable hunts per `hunts.md` 1a.
 
 ---
 
@@ -282,7 +282,7 @@ Placeholders: `{Camp}` = camp name, `{Inviter}` = display name of the person who
 ## Proposals (scope expansions, for the PM; not for the builder)
 1. **"Ready for camp" checklist** (Settings): app installed · signed in in the app · camp downloaded {time} · nothing waiting to send. This directly supports the offline goal.
 2. **Email-bound invites:** an optional "their email" field so only that address can redeem. Tighter security, but it adds a step and a failure mode (the wrong email).
-3. **Link a guest roster entry on join** (D-7): when inviting, pick an existing name-only guest so their past harvests carry over to the new account.
+3. **Link a guest roster entry on join** (D-7): when inviting, pick an existing name-only guest (from past hunt parties) so their past harvests carry over to the new account.
 4. **Member management** (change role, remove member, transfer ownership). This is not in the G2 scope, but it's needed before other crews use the app.
 
 ## Open questions

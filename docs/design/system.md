@@ -78,7 +78,7 @@ Rules: near-black warm background, **no white and no blue or green anywhere**, l
 
 | Token | Size / line height | Weight | Font | Use |
 |---|---|---|---|---|
-| `display` | 36 / 40 | 700 | Semi Condensed | Year on the trip page |
+| `display` | 36 / 40 | 700 | Semi Condensed | Big numbers and hero titles (rarely used since hunts replaced years) |
 | `h1` | 28 / 34 | 700 | Semi Condensed | Screen titles |
 | `h2` | 22 / 28 | 600 | Semi Condensed | Section titles, card titles |
 | `body-lg` | 18 / 26 | 400 | Barlow | **Default body**, inputs, list rows |
@@ -105,7 +105,7 @@ Rules: near-black warm background, **no white and no blue or green anywhere**, l
 - **Lucide** (`lucide-react`): ISC license, tree-shakeable, bundled so it works offline, with a consistent stroke.
 - 24px default, 20px inside badges, **2px stroke**. Icons inherit `currentColor`.
 - Every icon-only button has an `aria-label` and a 48px hit area.
-- Core mapping: `lock` = private · `smartphone` = saved on phone · `circle-check` = sent to camp · `loader-circle` = sending · `triangle-alert` = needs attention · `cloud-off` = no signal · `tent` = camp · `map-pin` = pin · `users` = crew · `mail` = email · `share` = share · `sun` / `moon` = theme.
+- Core mapping: `lock` = private · `smartphone` = saved on phone · `circle-check` = sent to camp · `loader-circle` = sending · `triangle-alert` = needs attention · `cloud-off` = no signal · `tent` = camp · `map-pin` = pin · `users` = crew · `mail` = email · `share` = share · `sun` / `moon` = theme. Hunts (G4): `calendar` = dates · `trees` = hunt area · `eye-off` = summary only · `radio` = live hunt · `target` = harvest · `trophy` = award.
 - **Proposal (scope):** a small custom set (tree stand, deer, antlers, drag) drawn to match Lucide's 2px grid, for M2–M3. Lucide has no hunting icons.
 
 ---
@@ -149,6 +149,7 @@ Rules: near-black warm background, **no white and no blue or green anywhere**, l
 - It appears in: the camp header bar (always), the pin map and pin details, every composer (post, harvest, message), the invite screens, and the join preview.
 - In daylight it uses `text` on `surface-sunken`. In dark it uses `text` on `surface`.
 - `[lock]` in these specs means the Lucide `lock` icon.
+- **Hunt badge (G4, `hunts.md` section 0):** on hunt screens and hunt cards it replaces "Camp only" with the hunt's own state: `lock` + "Party only" (unshared) or `tent` + "Shared with camp" (shared). Different icon and word, never color alone. Summary cards add `eye-off` + "Summary only" and a dashed 1.5px border with no cover.
 
 ---
 

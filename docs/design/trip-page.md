@@ -1,5 +1,7 @@
 # Camp Home, Trip Page and Crew
 
+> **Partly superseded by `hunts.md` (G4, 2026-10-23).** The year-based model is replaced by Camp → Hunts → Party (D-13 to D-18). Sections 1, 3, 4 and 5 are **superseded**. Still valid: section 0 (shared rules, except "Camp only" is replaced by the hunt badge on hunt screens), 2 (camp picker), 6 (Ready for camp, with the "saved" row from `hunts.md` 1a), 7 (Crew) and 8 (Me).
+
 _Owner: designer. Task G3 (M2a). Last updated 2026-10-23. Uses tokens and components from `system.md`; sign-in, invites and install come from `onboarding.md` (G2)._
 
 **Goal:** a buddy opens Deer Camp, sees his camp and this year's trip (cover, location, who's coming), and can trust it will be there at camp with no signal. Owner and admins can set up the year and manage the crew in a few taps.
@@ -27,6 +29,8 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 ---
 
 ## 1. Camp home
+> **Superseded** by `hunts.md` section 1.
+
 **User goal:** see my camp and get to this year's trip in one tap.
 
 **Opens when:** signed in and in exactly one camp, or the last-opened camp (remembered on the device) if in several.
@@ -73,6 +77,8 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 ---
 
 ## 3. Trip-year page
+> **Superseded** by `hunts.md` sections 3, 5 and 6.
+
 **User goal:** see the year at a glance: where, when, who came.
 
 **Header:** back to camp home · title "{year}" · "[lock] Camp only" · owner/admin only: `pencil` icon button (aria-label "Edit {year}").
@@ -103,6 +109,8 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 ---
 
 ## 4. Create or edit a year (owner and admins, D-11)
+> **Superseded** by `hunts.md` section 2 (any member creates a hunt). The cover resize and EXIF-strip builder notes still apply.
+
 **User goal:** set up this year's page in under a minute.
 
 **Entry:** camp home "Add {year}" / "Add a year" · trip page `pencil`.
@@ -137,6 +145,8 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 ---
 
 ## 5. Add to roster and add a guest (owner and admins)
+> **Superseded** by `hunts.md` section 7 (Edit party, any party member).
+
 **User goal:** get everyone who came, including guests without the app, on the year's roster.
 
 **"Add to roster" sheet**, two segments:
@@ -171,7 +181,7 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 |---|---|---|---|
 | Installed | Running from the home screen (`display-mode: standalone` / `navigator.standalone`) | "On your home screen" | "Put Deer Camp on your home screen" · "Show me how" (G2 flow 5). In a browser on iPhone add: "Already did it? Open Deer Camp from your home screen." |
 | Signed in | Has a session **inside the installed app** | "Signed in on this phone" | In the browser: "Open the home-screen app to check" (no action). In the app with no session: "Sign in" |
-| Camp saved | Camp home, current year, roster and cover are cached, and storage is kept (`persist()` granted, or installed on iPhone) | "{Camp} saved · updated {time}" | "Not saved yet" or "Last saved {time}" if older than 3 days · "Save now" (Needs signal when offline) |
+| Camp saved | **Updated in `hunts.md` 1a:** camp home, all summaries and every upcoming or happening hunt the user can read are cached, and storage is kept (`persist()` granted, or installed on iPhone) | "{Camp} and {hunt} saved · updated {time}" | "{hunt} isn't saved yet" or "Last saved {time}" if older than 3 days · "Save now" (Needs signal when offline) |
 | Nothing waiting | 0 items waiting to send | "Nothing waiting to send" | "{n} things waiting. Get signal before you go." · "Try sending" |
 | Alerts (M3) | **Hidden in M2a.** Added with M3 push alerts, only where the phone supports them (iPhone: installed app, iOS 16.4+) | "Alerts on" | "Turn on alerts" |
 
@@ -203,9 +213,9 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 | Owner → self | Caption: "You're the owner. The owner can't leave the camp." |
 
 **Confirm sheets (copy):**
-- **Make admin:** h2 "Make {name} an admin?" body "Admins can invite members, add years and guests, add pins, hide posts and remove members. You can undo this." Buttons "Make admin" (primary) / "Cancel". Toast "{name} is now an admin."
-- **Make member:** h2 "Make {name} a member?" body "{name} won't be able to invite people, add years or remove anyone." Buttons "Make member" / "Cancel". Toast "{name} is now a member."
-- **Remove:** h2 "Remove {name} from {Camp}?" body "{name} loses access to the pins, photos, posts and messages right away. Their name stays on past rosters, harvests and stories." Buttons "Remove" (danger) / "Keep {name}". Toast "{name} was removed."
+- **Make admin:** h2 "Make {name} an admin?" body "Admins can invite members, add pins, hide posts and remove members. You can undo this." Buttons "Make admin" (primary) / "Cancel". Toast "{name} is now an admin."
+- **Make member:** h2 "Make {name} a member?" body "{name} won't be able to invite people, add pins or remove anyone." Buttons "Make member" / "Cancel". Toast "{name} is now a member."
+- **Remove:** h2 "Remove {name} from {Camp}?" body "{name} loses access to the pins, photos, posts and messages right away. Their name stays on past hunts, harvests and stories." Buttons "Remove" (danger) / "Keep {name}". Toast "{name} was removed."
 - **Leave:** h2 "Leave {Camp}?" body "You'll lose access to its pins, photos, posts and messages, and they'll be cleared from this phone. You'll need a new invite to come back." Buttons "Leave camp" (danger) / "Stay". Then camp picker or G2 "You're not in a camp yet".
 
 **States:**
@@ -224,6 +234,8 @@ Placeholders: `{Camp}`, `{Owner}`, `{year}`, `{name}`, `{time}` = "Fri 6:12 PM".
 ---
 
 ## Open questions (for the PM)
+> Questions 1, 4 and 6 are revisited in `hunts.md`. Questions 5, 7 and 8 refer to superseded sections; `hunts.md` caps hunt names at 60 and guest names at 40, and keeps the "More coming" placeholder.
+
 1. **Members adding themselves to a year's roster:** the schema allows it. Default in this spec: owner and admins manage the roster only. A member "I made this trip" button would be cheap; approve or not?
 2. **Leave camp** for non-owners is included (schema allows it and there's otherwise no way out). Confirm.
 3. **Transfer ownership** exists in the schema but isn't in D-12. Left out of M2a. Is that OK, given D-3's backup admin can't take over if Jason is unavailable?
