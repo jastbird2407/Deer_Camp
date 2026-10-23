@@ -4,6 +4,15 @@ _Maintained by the project-manager agent. Newest first._
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-10-23 | D-5: Maps use MapLibre GL JS with USGS satellite and topo tiles, saved offline for the camp area only | Free, public domain, allowed to cache; Mapbox offline terms unclear for web |
+| 2026-10-23 | D-6: Weather uses Open-Meteo | Free, no key, wind and moon data; switch if Deer Camp is ever sold |
+| 2026-10-23 | D-7: Roster allows name-only guests without an app account | Keeps the yearbook complete; already in the schema |
+| 2026-10-23 | D-8: Any signed-in user can create a camp | Supports other crews later |
+| 2026-10-23 | D-9: Signed-out invite screen shows camp name, inviter, role, expiry only | Helps a buddy trust the link; reveals nothing else |
+| 2026-10-23 | D-10: Resend is on hold. Use Supabase's built-in email for testing only; Resend moves to the ideas list | Jason's call; revisit before inviting the full crew |
+| 2026-10-23 | D-11: Owner and admins add pins and trip years; members claim stands, log harvests, post | Keeps the private map tidy |
+| 2026-10-23 | D-12: Approved now: QR code for invites, "Ready for camp" checklist, basic member management, auto-release stand claims at dark (M3), "good winds" tag per stand (M3). Later: printable yearbook, auto dark theme at sunset, custom hunting icons, GPX import. Ideas list: Resend email sender, trail-cam import. No: scouting AI, parcel lookup, cost splitting, email-bound invites, satellite messaging | Jason accepted all PM recommendations, with Resend and trail-cam import moved to the ideas list |
+| 2026-10-23 | Vercel project `deer_camp` is connected to the repo; Supabase project created by Jason | Jason action J1 |
 | 2026-10-23 | D-1: Repo will be private (Jason to switch it in GitHub settings) | Keep the brief, schema, and camp details off the public web |
 | 2026-10-23 | D-2: Sign-in is email plus a 6-digit code | Works inside the installed iPhone app, free, no Google account needed |
 | 2026-10-23 | D-3: Jason is camp owner, with one backup admin | One clear owner; a backup if Jason is unavailable |

@@ -102,9 +102,14 @@ _To be planned after M2._ Needs D-5 and D-6. Chat is "sends when the app is open
 
 ---
 
+## Potential implementation ideas
+_Not scheduled. Jason decides if and when._
+- **Resend email sender** with a domain Jason owns, for sign-in code emails to the full crew. Until then, Supabase's built-in email is for testing only.
+- **Trail-cam import:** pull trail camera photos into the camp, tied to a stand pin.
+
 ## Decisions Jason needs to make
 
-D-1 to D-4 are decided (see `DECISIONS.md`).
+**D-1 to D-12 are all decided (see `DECISIONS.md`). The table below is kept for reference.**
 
 | # | Decision | Needed by | PM recommendation |
 |---|---|---|---|
