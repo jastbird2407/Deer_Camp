@@ -1,6 +1,6 @@
 # Feature Matrix
 
-_Researcher. Last updated 2026-10-23 (R4). This matrix is built from [R1](2026-10-23-hunting-apps.md) and [R2](2026-10-23-group-and-memory-apps.md). The sources for each cell are in those reports. Keep this file current as new products are studied._
+_Researcher. Last updated 2026-10-23 (R4, R5 wording fix). This matrix is built from [R1](2026-10-23-hunting-apps.md) and [R2](2026-10-23-group-and-memory-apps.md). The sources for each cell are in those reports. Keep this file current as new products are studied._
 
 **Legend**
 - **Y** = yes, documented
@@ -29,7 +29,7 @@ The matrix is split into two tables so they fit on screen. The rows are the same
 | Moon phase | Y | — | — | Y (used in model) | — | Y (in HuntCast) |
 | Offline support | Y (offline-first queue) | Y (paid. Share Nearby, same platform only) | Y (Pro) | Y (maps and forecasts) | Y (maps. Sharing needs signal) | P (1 area free. Reviews report failures) |
 | Multi-group support | Y (camp per group) | P (multiple folders) | P (multiple hunt areas) | — | — | P (multiple hunt areas) |
-| Invite method | Per-person link + QR (D-4 default) | Link by text or email. Bluetooth nearby | Share hunt area | Text pin. Blue Force Tracker | Text or email. Follow friends | "Invite" on a hunt area |
+| Invite method | Per-person link, plus a QR code of the same link (D-12) | Link by text or email. Bluetooth nearby | Share hunt area | Text pin. Blue Force Tracker | Text or email. Follow friends | "Invite" on a hunt area |
 | Guests without an account | Y (D-7 default) | — | — | — | — | — |
 | Price (yearly) | Free for one crew | Free / $34.99–$99.99 | Free / about $30–$99.99 | Free / about $40–$80 (unverified) | Free / $39.99 (+$9.99) | Free / $59.99–$119.99 |
 
@@ -51,7 +51,7 @@ The matrix is split into two tables so they fit on screen. The rows are the same
 | Moon phase | Y | — | — | — | N | N | N | N | N | N |
 | Offline support | Y | Y (check-ins and harvests queue, then sync) | P (offline maps) | — | — | P (Pro only) | — | — | — | — |
 | Multi-group support | Y | — | P (crew, club and outfitter plans) | — | Y | Y (many trips) | — | Y (many journals) | Y | Y |
-| Invite method | Per-person link + QR | QR for guests. Member flow not documented | Admin invite, renewable. Printable QR | Not documented | Open share link or QR | "Invite friends" | Admin picks role, then QR | Owner invites | Account or link | Apple ID |
+| Invite method | Per-person link, plus a QR code of the same link (D-12) | QR for guests. Member flow not documented | Admin invite, renewable. Printable QR | Not documented | Open share link or QR | "Invite friends" | Admin picks role, then QR | Owner invites | Account or link | Apple ID |
 | Guests without an account | Y | Y (gate QR, no app) | — | P (sign in on a buddy's phone) | — | — | — | N (free account required) | Y (link view) | — |
 | Price (yearly) | Free for one crew | Free ≤3 members / $119.99 club | Free / $9.99–$149.99 | About $5/person (2018) | Free | Free / about $39.99 Pro | Free / $59–$109 | Free member. Premium to create (unverified) | Free (storage limits) | Free (iCloud storage) |
 
@@ -67,5 +67,5 @@ _Ranked by value to the crew relative to effort to build. These are proposals fo
 1. **Gap, high value, medium effort:** Build the trip/year page, awards and stories first, as the M2 plan already does. Nobody else offers them.
 2. **Copy, high value, medium effort:** The CampKeeper pattern of a stand claim that pre-fills the harvest pin, plus a BlindBook-style weather snapshot on each harvest.
 3. **Do better, high value, low-medium effort:** Put stand claims and chat on one live board that works offline. Today's tools split them across separate apps.
-4. **Copy, high value, low effort:** Name-only guests and in-person QR invites.
+4. **Copy, high value, low effort:** Name-only guests and in-person QR invites (approved in D-12: per-person link plus a QR of the same link).
 5. **Avoid:** Open invite links (GroupMe) and paywalled offline maps. Offline is core for Deer Camp, not an upsell.
