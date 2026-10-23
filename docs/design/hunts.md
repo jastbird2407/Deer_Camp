@@ -160,6 +160,8 @@ Header: back · title "Who went?" · caption "Step 2 of 2".
 
 **User goal:** everything about my hunt on one screen: who's here, where they're sitting, what got shot, and the stories.
 
+> **Update (D-20, pending Jason's approval):** Items 1–6 below are the fixed header. Items 7–10 (Stands today, Harvest board, Stories, Camp awards) become **sections (modules)** in an ordered, editable stack, alongside Checklist, Photos, Rules and Notes. Live hunt stays fixed; weather stays a caption. See `docs/design/modules.md`.
+
 Sample: Jason viewing Rifle Opener 2026. Sections marked **(M2b)** / **(M3)** are mocked as future states; in M2a they collapse to one placeholder card (see States).
 
 **Layout (top to bottom):**
