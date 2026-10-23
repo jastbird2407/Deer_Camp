@@ -4,6 +4,9 @@ _Maintained by the project-manager agent. Newest first._
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-10-23 | D-18: Names: **Camp** is the big group; **Hunt** is each individual trip | Jason's choice. ("Group" in D-13 to D-16 means Camp.) |
+| 2026-10-23 | D-19: **Photo import is parked** on the potential ideas list; not scheduled | Jason's call. Past hunts can still be added by hand |
+| 2026-10-23 | Design first: builder work (B4b on) waits until Jason approves the designs | Jason's direction |
 | 2026-10-23 | D-13: Two levels. A **group** (the big camp, any size) holds many **hunts** (individual trips), each with its own **party** members | Jason's direction: the big group sees all hunts; each trip has its own party |
 | 2026-10-23 | D-14: A hunt not shared to the group shows the whole group a **summary** only; full details stay with the party | Jason's choice |
 | 2026-10-23 | D-15: **Any party member** can share a hunt to the big group | Jason's choice |

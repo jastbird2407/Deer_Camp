@@ -147,7 +147,9 @@ _To be planned after M2._ Needs D-5 and D-6. Chat is "sends when the app is open
 
 ---
 
-## Milestone 4: Photo Import for Past Hunts (D-17)
+## Milestone 4: Photo Import for Past Hunts (D-17) — PARKED (D-19)
+
+**Jason moved photo import to the potential ideas list on 2026-10-23.** Nothing below is scheduled; T2, G5 and B30–B33 are parked. The plan is kept here so it's ready if Jason picks it back up.
 
 **Goal:** Jason (or any party member) turns a folder of old hunting photos into past hunts in one sitting: suggested trips with dates and area, confirmed on one review screen, photos stored small and location-free.
 
@@ -187,10 +189,11 @@ _To be planned after M2._ Needs D-5 and D-6. Chat is "sends when the app is open
 _Not scheduled. Jason decides if and when._
 - **Resend email sender** with a domain Jason owns, for sign-in code emails to the full crew. Until then, Supabase's built-in email is for testing only.
 - **Trail-cam import:** pull trail camera photos into the camp, tied to a stand pin.
+- **Photo import for past hunts** (D-17, parked by D-19): upload old photos, read dates and location from metadata, build past hunts. Full plan in Milestone 4 above; research in `docs/research/2026-10-23-photo-import.md`. Past hunts can still be added by hand.
 
 ## Decisions Jason needs to make
 
-**Pending: naming of the two levels (Jason is choosing), plus Q1-Q5 below.**
+**Naming decided (D-18: Camp and Hunt). Q5 answered (D-19: photo import parked). Q1-Q4 still open; designer works from the PM defaults until Jason answers.**
 
 | # | Question | Needed by | PM recommendation |
 |---|---|---|---|
