@@ -4,6 +4,7 @@ _Maintained by the project-manager agent. Newest first._
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-10-23 | D-20: Hunts (and possibly the camp) are built from **customizable modules** that can be added: Checklist (who's bringing what), Photos, Pins, Regulations (what's allowed or not), and a free-form Notes module for anything. Design first | Jason's request. Existing hunt sections (harvest board, stories, awards, live hunt, stands) are expected to become modules too; designer to propose |
 | 2026-10-23 | D-18: Names: **Camp** is the big group; **Hunt** is each individual trip | Jason's choice. ("Group" in D-13 to D-16 means Camp.) |
 | 2026-10-23 | D-19: **Photo import is parked** on the potential ideas list; not scheduled | Jason's call. Past hunts can still be added by hand |
 | 2026-10-23 | Design first: builder work (B4b on) waits until Jason approves the designs | Jason's direction |
